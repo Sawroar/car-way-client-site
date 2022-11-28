@@ -1,9 +1,10 @@
 import React from 'react';
+import InfoCards from '../InfoCards/InfoCards';
 
 const Home = () => {
     return (
-        <div>
-            This is Home
+        <div className='mt-10'>
+            <InfoCards></InfoCards>
         </div>
     );
 };

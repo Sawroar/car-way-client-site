@@ -6,7 +6,7 @@ const InfoCard = ({ card }) => {
         <div className="card card-side bg-base-100 shadow-xl mt-11 mb-11">
             <figure><img src={icon} alt="Movie" /></figure>
             <div className="card-body">
-                <h2 className="card-title">{name}</h2>
+                <h2 className="card-title font-semibold">{name}</h2>
                 <p>{description}</p>
                 <div className="card-actions justify-end">
                     <button className="btn btn-info">Read More</button>

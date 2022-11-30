@@ -7,53 +7,103 @@ const Blogs = () => {
             <div className='grid grid-cols-1'></div>
             <div className='border-2 rounded-lg p-5'>
                 <h2 className='text-2xl bg-orange-500 text-white font-bold py-2 my-5'>
-                    What is the defference between SQL and NoSQL?</h2>
+                    What are the different ways to manage a state in a React application?</h2>
                 <p className='texl-lg font-semibold'>
-                    SQL databases are vertically scalable, while NoSQL databases are horizontally scalable. SQL databases are table-based, while NoSQL databases are document, key-value, graph, or wide-column stores. SQL databases are better for multi-row transactions, while NoSQL is better for unstructured data like documents or JSON.
+                    The Four Kinds of React State to Manage
+                    When we talk about state in our applications, it’s important to be clear about what types of state actually matter.
+
+                    There are four main types of state you need to properly manage in your React apps:
+
+                    1. Local state
+                    2. Global state
+                    3. Server state
+                    4. URL state
+                    Let's cover each of these in detail:
+                    Local (UI) state – Local state is data we manage in one or another component.
+
+                    Local state is most often managed in React using the useState hook.
+
+                    For example, local state would be needed to show or hide a modal component or to track values for a form component, such as form submission, when the form is disabled and the values of a form’s inputs.
+
+                    Global (UI) state – Global state is data we manage across multiple components.
+
+                    Global state is necessary when we want to get and update data anywhere in our app, or in multiple components at least.
+
+                    A common example of global state is authenticated user state. If a user is logged into our app, it is necessary to get and change their data throughout our application.
+
+                    Sometimes state we think should be local might become global.
+
+                    Server state – Data that comes from an external server that must be integrated with our UI state.
+
+                    Server state is a simple concept, but can be hard to manage alongside all of our local and global UI state.
+
+                    There are several pieces of state that must be managed every time you fetch or update data from an external server, including loading and error state.
+
+                    Fortunately there are tools such as SWR and React Query that make managing server state much easier.
+
+                    URL state – Data that exists on our URLs, including the pathname and query parameters.
+
+                    URL state is often missing as a category of state, but it is an important one. In many cases, a lot of major parts of our application rely upon accessing URL state. Try to imagine building a blog without being able to fetch a post based off of its slug or id that is located in the URL!
+
+                    There are undoubtedly more pieces of state that we could identify, but these are the major categories worth focusing on for most applications you build.
                 </p>
             </div>
             <div className='border-2 rounded-lg p-5 my-5'>
                 <h2 className='text-2xl bg-orange-500 text-white font-bold py-2 my-5'>
-                    What is JWT? How does JWT works?</h2>
+                    How does prototypical inheritance work?</h2>
                 <p className='texl-lg font-semibold'>
-                    JSON Web Token (JWT) is an open standard (RFC 7519) for securely transmitting information between parties as JSON object.
-
-                    It is compact, readable and digitally signed using a private key/ or a public key pair by the Identity Provider(IdP). So the integrity and authenticity of the token can be verified by other parties involved.
-
-                    The purpose of using JWT is not to hide data but to ensure the authenticity of the data. JWT is signed and encoded, not encrypted.
-
-                    JWT is a token based stateless authentication mechanism. Since it is a client-side based stateless session, server doesn't have to completely rely on a datastore(database) to save session information.
+                    The Prototypal Inheritance is a feature in javascript used to add methods and properties in objects. It is a method by which an object can inherit the properties and methods of another object. Traditionally, in order to get and set the [[Prototype]] of an object, we use Object.
                 </p>
             </div>
             <div className='border-2 rounded-lg p-5'>
                 <h2 className='text-2xl bg-orange-500 text-white font-bold py-2 my-5'>
-                    What is the defference between Javascript and Node.js?</h2>
+                    What is a Unit Test? Why should we write unit tests?</h2>
                 <p className='texl-lg font-semibold'>
-                    <span className='font-bold text-xl'>  Defference between Javascript and Node.js are -</span> <br /> <br />
-                    1. JavaScript is a client-side scripting language that is lightweight, cross-platform, and interpreted. Both Java and HTML include it. Node.js, on the other hand, is a V8-based server-side programming language. <br />
+                    <span className='font-bold text-xl'> A unit test is a way of testing a unit - the smallest piece of code that can be logically isolated in a system. In most programming languages, that is a function, a subroutine, a method or property. The isolated part of the definition is important.</span>
 
-                    As a result, it is used to create network-centric applications. It's a networked system made for data-intensive real-time applications. If we compare node js vs. python, it is clear that node js will always be the preferred option. <br /> <br />
-
-                    2. JavaScript is a simple programming language that can be used with any browser that has the JavaScript Engine installed. Node.js, on the other hand, is an interpreter or execution environment for the JavaScript programming language. It requires libraries that can be conveniently accessed from JavaScript programming to be more helpful. <br /> <br />
-
-                    3. Any engine may run JavaScript. As a result, writing JavaScript is incredibly easy, and any working environment is similar to a complete browser. Node.js, on the other hand, only enables the V8 engine. Written JavaScript code, on the other hand, can run in any context, regardless of whether the V8 engine is supported. <br /> <br />
-
-                    4. A specific non-blocking operation is required to access any operating system. There are a few essential objects in JavaScript, but they are entirely OS-specific. <br />
-
-                    Node.js, on the other hand, can now operate non-blocking software tasks out of any JavaScript programming. It contains no OS-specific constants. Node.js establishes a strong relationship with the system files, allowing companies to read and write to the hard drive. <br /> <br />
-
-                    5. The critical benefits of JavaScript include a wide choice of interfaces and interactions and just the proper amount of server contact and direct visitor input. <br />
-
-                    Node.js, on the other hand, offers node package management with over 500 modules and the capacity to handle many requests at the same time. It also offers the unique ability to enable microservice architecture and the Internet of Things. Even when comparing node js vs. react js, node js always wins.
+                    The main objective of unit testing is to isolate written code to test and determine if it works as intended. Unit testing is an important step in the development process, because if done correctly, it can help detect early flaws in code which may be more difficult to find in later testing stages.
                 </p>
             </div>
             <div className='border-2 rounded-lg p-5'>
                 <h2 className='text-2xl bg-orange-500 text-white font-bold py-2 my-5'>
-                    How does Node.js handle multiple requests at the same time?</h2>
+                    React vs. Angular vs. Vue?</h2>
                 <p className='texl-lg font-semibold'>
-                    NodeJS receives multiple client requests and places them into EventQueue. NodeJS is built with the concept of event-driven architecture. NodeJS has its own EventLoop which is an infinite loop that receives requests and processes them. EventLoop is the listener for the EventQueue. <br /> <br />
+                    React
+                    React can be used as a UI library to render elements, without enforcing a specific project structure, and that’s why it’s not strictly a framework.
 
-                    If NodeJS can process the request without I/O blocking then the event loop would itself process the request and sends the response back to the client by itself. But, it is possible to process multiple requests parallelly using the NodeJS cluster module or worker_threads module.
+                    React Elements are the smallest building blocks of React apps. They are more powerful than DOM elements because the React DOM makes sure to update them efficiently whenever something changes.
+
+                    Components are larger building blocks that define independent and reusable pieces to be used throughout the application. They accept inputs called props and produce elements that are then displayed to the user.
+
+                    React is based on JavaScript, but it’s mostly combined with JSX (JavaScript XML), a syntax extension that allows you to create elements that contain HTML and JavaScript at the same time.
+
+                    Anything you create with JSX could also be created with the React JavaScript API, but most developers prefer JSX because it’s more intuitive.
+
+
+                    Vue
+                    The Vue.js core library focuses on the View layer only. It’s called a progressive framework because you can extend its functionality with official and third-party packages, such as Vue Router or Vuex, to turn it into an actual framework.
+
+                    Although Vue is not strictly associated with the MVVM (Model-View-ViewModel) pattern, its design was partly inspired by it. With Vue, you’ll be working mostly on the ViewModel layer, to make sure that the application data is processed in a way that allows the framework to render an up-to-date View.
+
+                    Vue’s templating syntax lets you create View components, and it combines familiar HTML with special directives and features. This templating syntax is preferred, even though raw JavaScript and JSX are also supported.
+
+                    Components in Vue are small, self-contained, and can be reused throughout the application. Single File Components (SFCs) with the .vue extension contain HTML, CSS, and JavaScript so that all relevant code resides in one file.
+
+                    SFCs are the recommended way to organize code in Vue.js projects, especially larger ones. Tools such as Webpack or Browserify are required to transpile SFCs into working JavaScript code.
+
+
+                    Angular
+                    AngularJS, the original framework, is an MVC (Model-View-Controller)) framework. But in Angular 2, there’s no strict association with MV*-patterns as it is also component-based.
+
+                    Projects in Angular are structured into Modules, Components, and Services. Each Angular application has at least one root component and one root module.
+
+                    Each component in Angular contains a Template, a Class that defines the application logic, and MetaData (Decorators). The metadata for a component tells Angular where to find the building blocks that it needs to create and present its view.
+
+                    Angular templates are written in HTML but can also include Angular template syntax with special directives to output reactive data and render multiple elements, among other things.
+
+                    Services in Angular are used by Components to delegate business-logic tasks such as fetching data or validating input. They are a distinct part of Angular applications. While Angular doesn’t enforce their use, it’s highly suggested to structure apps as a set of distinct services that can be reused.
+
+                    Angular is built in TypeScript, so its use is recommended to get the most seamless experience, but plain JavaScript is also supported.
                 </p>
             </div>
 

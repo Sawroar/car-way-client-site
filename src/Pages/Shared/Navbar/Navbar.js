@@ -15,7 +15,7 @@ const Navbar = () => {
     }
     const meuItems = <React.Fragment>
         <li><Link to='/' className='bg-base-300  rounded-md mr-2' >Home</Link></li>
-        <li><Link to='/about' className='bg-base-300 text-red rounded-md mr-2' >About</Link></li>
+        <li><Link to='/products' className='bg-base-300 text-red rounded-md mr-2' >Products</Link></li>
         {user?.uid ? <li><Link to='/login' onClick={handleLogOut} className='bg-base-300 text-red rounded-md mr-2' >SignOut</Link></li>
             : <li><Link to='/login' className='bg-base-300 text-red rounded-md mr-2' >Login</Link></li>}
         <li><Link to='/blogs' className='bg-base-300 text-red rounded-md mr-2' >Blogs</Link></li>

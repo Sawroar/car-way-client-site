@@ -1,8 +1,9 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import BookingModal from '../Shared/BookingModal/BookingModal';
 
 const Checkout = () => {
-    const { title, img, price, Purchase, Location, Call, PostDate } = useLoaderData()
+    const { title, img, price, Purchase, Location, PostDate } = useLoaderData()
 
     return (
         <div className='mt-10'>
@@ -13,9 +14,10 @@ const Checkout = () => {
                     <p className='text-2xl text-orange-600 font-semibold'>Price:${price}</p>
                     <p className='text-2xl font-semibold'>Location:{Location}</p>
                     <p className='text-xl text-gray-600 font-semibold'>Post Date:{PostDate}</p>
+                    <p className='text-xl text-gray-600 font-semibold'>Purchase Date:{Purchase}</p>
                     <div>
-                        <button className='btn btn-info'>Book Now</button>
-
+                        <label htmlFor="booking-modal" className="btn btn-info">Book Now</label>
+                        <BookingModal title={title}></BookingModal>
                     </div>
                 </div>
             </div>

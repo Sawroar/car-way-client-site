@@ -16,6 +16,7 @@ const Navbar = () => {
     const meuItems = <React.Fragment>
         <li><Link to='/' className='bg-base-300  rounded-md mr-2' >Home</Link></li>
         <li><Link to='/products' className='bg-base-300 text-red rounded-md mr-2' >Products</Link></li>
+        <li><Link to='/dashboard' className='bg-base-300 text-red rounded-md mr-2' >Dashboard</Link></li>
         {user?.uid ? <li><Link to='/login' onClick={handleLogOut} className='bg-base-300 text-red rounded-md mr-2' >SignOut</Link></li>
             : <li><Link to='/login' className='bg-base-300 text-red rounded-md mr-2' >Login</Link></li>}
         <li><Link to='/blogs' className='bg-base-300 text-red rounded-md mr-2' >Blogs</Link></li>
@@ -38,9 +39,12 @@ const Navbar = () => {
                     {meuItems}
                 </ul>
             </div>
-            <div className="navbar-end">
+            <div className="navbar-end lg:hidden">
                 <Link to='/' className="btn btn-active btn-secondary text-white" >Make Appoinments</Link>
             </div>
+            <label tabIndex={2} htmlFor='dashboard-drawer' className="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
         </div>
     );
 };

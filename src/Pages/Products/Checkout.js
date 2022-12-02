@@ -17,7 +17,7 @@ const Checkout = () => {
                     <p className='text-xl text-gray-600 font-semibold'>Purchase Date:{Purchase}</p>
                     <div>
                         <label htmlFor="booking-modal" className="btn btn-info">Book Now</label>
-                        <BookingModal title={title}></BookingModal>
+                        <BookingModal title={title} price={price}></BookingModal>
                     </div>
                 </div>
             </div>

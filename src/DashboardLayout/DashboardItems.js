@@ -8,7 +8,7 @@ const DashboardItems = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/bookings?email=${user?.email}`)
+        fetch(`https://car-way-server-site.vercel.app/bookings?email=${user?.email}`)
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [user?.email])
@@ -25,7 +25,7 @@ const DashboardItems = () => {
     console.log(orders);
     return (
         <div>
-            <h1 className='text-4xl'>Apppointments {orders.length} </h1>
+            <h1 className='text-4xl'>My Orders {orders.length} </h1>
             <div className="overflow-x-auto">
                 <table className="table w-full">
 

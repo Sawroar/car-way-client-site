@@ -69,7 +69,7 @@ const Signup = () => {
                             <span className="label-text">Forget Password</span>
                         </label>
                     </div>
-                    <input className='btn btn-primary w-full' value='Login' type="submit" />
+                    <input className='btn btn-primary w-full' value='SignUp' type="submit" />
                 </form>
                 <div>{signupError && <p className='text-red-600'>{signupError}</p>}</div>
                 <p>Already have an Account? <Link className='text-secondary' to='/login'>Login</Link></p>

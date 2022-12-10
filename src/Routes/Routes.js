@@ -39,11 +39,11 @@ const router = createBrowserRouter([
             {
                 path: '/checkout/:id',
                 element: <Checkout></Checkout>,
-                loader: ({ params }) => fetch(`http://localhost:5000/options/${params.id}`)
+                loader: ({ params }) => fetch(`https://car-way-server-site.vercel.app/options/${params.id}`)
             },
             {
                 path: '/products',
-                element: <PrivateRoute> <Products></Products></PrivateRoute>
+                element: <Products></Products>
             }
         ]
     }
